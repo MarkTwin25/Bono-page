@@ -1,3 +1,3 @@
 # Bono project
 
-Registration page!!
+Simple Registration page.
