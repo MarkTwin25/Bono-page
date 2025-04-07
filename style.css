@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: grey;
+    color: white;
+    line-height: 1.6;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,64,50,0.8),
+        rgba(71,27,116,0.9)
+    ),
+    url(../mini-project/images/background.jpg)
+     no-repeat center center;
+}
+
+.logo{
+    width: 100px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-right{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-right i{
+    margin-right: 7px;
+}
+
+.header-right a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-right a:hover{
+    color: #ff4032;
+}
+
+main{
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 100px auto; 
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    padding: 0 40px;
+}
+
+main form{
+    flex: 1;
+}
+
+main .texto{
+    flex: 1;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea{
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    outline: 0;
+    color: white;
+}
+
+.form-group textarea{
+    height: 100px;
+    resize: none;
+}
+
+.btn{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    background-color: #ff4032;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.texto h1{
+    font-size: 50px;
+    margin-top: 50px;
+
+}
+
+/* Media Querys */
+
+@media(max-width: 768px){
+    header,
+    .header-right{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        justify-content: start;
+        margin: auto;
+    }
+
+    main form{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    main{
+        margin: 0 auto;
+    }
+}
